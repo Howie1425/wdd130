@@ -36,6 +36,7 @@ main {
 }
 
 aside {
+    position: relative;
     width: 20rem;
     margin: 1rem;
     text-align: center;
