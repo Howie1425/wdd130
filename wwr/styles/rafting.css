@@ -12,41 +12,52 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: var(--text-font);
   color: var(--primary-color);
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem;
 }
 
 header, main, footer {
-  max-width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
 }
-h1, h2, h3, h4, h5, h6 {
+
+h1, h2 {
   font-family: var(--heading-font);
   color: var(--accent1-color);
+  margin-bottom: 1rem;
 }
+
 nav, p, section, article {
-  margin: 1rem 0;
+  margin: 1rem;
   padding: 0.5rem;
 }
-footer .socialmedia a {
+
+.socialmedia a {
   text-decoration: none;
+  margin: 0 0.5rem;
 }
+
 .hero {
   position: relative;
   width: 100%;
-  overflow: hidden; 
+  overflow: hidden;
+  min-height: 400px;
 }
 
 .hero img {
   display: block;
   width: 100%;
-  height: auto; 
-  object-fit: cover; 
-  min-height: 400px; 
+  height: auto;
+  object-fit: cover;
 }
 
 .hero h1 {
@@ -54,11 +65,12 @@ footer .socialmedia a {
   top: 20%;
   left: 50%;
   transform: translateX(-50%);
-  color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  font-size: 3rem;
+  width: 80%;
+  padding: 1rem;
   text-align: center;
-  width: 100%;
+  background-color: rgba(36, 108, 160, 0.8);
+  color: white;
+  border-radius: 5px;
 }
 
 .hero article {
@@ -67,19 +79,15 @@ footer .socialmedia a {
   left: 50%;
   transform: translateX(-50%);
   width: 80%;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.9);
   padding: 1.5rem;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .hero article img {
   float: right;
   width: 150px;
-  height: auto;
   margin-left: 1rem;
-  margin-bottom: 1rem;
   border: 3px solid var(--accent1-color);
   border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
