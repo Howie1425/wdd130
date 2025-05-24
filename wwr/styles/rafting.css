@@ -103,3 +103,4 @@ nav a:hover {
   color: white; /* Changes color to white on hover */
   background-color: var(--accent1-color); /* Orange background on hover */
   border-radius: 4px; /* Rounded corners on hover */
+}
