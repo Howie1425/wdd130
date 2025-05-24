@@ -91,3 +91,15 @@ nav, p, section, article {
   border: 3px solid var(--accent1-color);
   border-radius: 4px;
 }
+nav a {
+  color: var(--accent1-color); /* This uses your orange accent color */
+  text-decoration: none; /* Removes underline from links */
+  font-weight: bold; /* Makes text bold */
+  padding: 0.5rem 1rem; /* Adds some spacing around links */
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+nav a:hover {
+  color: white; /* Changes color to white on hover */
+  background-color: var(--accent1-color); /* Orange background on hover */
+  border-radius: 4px; /* Rounded corners on hover */
