@@ -1,0 +1,37 @@
+:root {
+  --primary-color: #246CA0;    /* Bice Blue */
+  --secondary-color: #93B18D;  /* Cambridge Blue */
+  --accent1-color: #F5A623;    /* Orange */
+  --accent2-color: #828256;    /* Reseda Green */
+  --heading-font: 'Bebas Neue', sans-serif;
+  --text-font: 'Roboto', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--text-font);
+  color: var(--primary-color);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header, main, footer {
+  max-width: 100%;
+  margin: 0 auto;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  color: var(--accent1-color);
+}
+nav, p, section, article {
+  margin: 1rem 0;
+  padding: 0.5rem;
+}
+footer .socialmedia a {
+  text-decoration: none;
+}
