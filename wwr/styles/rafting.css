@@ -1,8 +1,9 @@
+
 :root {
-  --primary-color: #246CA0;
-  --secondary-color: #93B18D;
-  --accent1-color: #F5A623;
-  --accent2-color: #828256;
+--primary-color: #1A4D7F;
+  --secondary-color: #6D8B6D;
+  --accent1-color: #E69500;
+  --accent2-color: #6B6D40;
   --heading-font: 'Bebas Neue', sans-serif;
   --text-font: 'Roboto', sans-serif;
 }
@@ -42,7 +43,7 @@ nav ul {
 }
 
 nav a {
-  color: var(--accent1-color);
+  color: white;
   text-decoration: none;
   font-weight: bold;
   padding: 0.5rem 1rem;
@@ -53,6 +54,9 @@ nav a:hover {
   color: white;
   background-color: var(--accent1-color);
   border-radius: 4px;
+}
+body {
+  color: #333
 }
 
 /* HERO SECTION */
@@ -78,7 +82,7 @@ nav a:hover {
   width: 80%;
   padding: 1rem;
   text-align: center;
-  background-color: rgba(36, 108, 160, 0.8);
+  background-color: rgba(26, 77, 127, 0.9);
   color: white;
   border-radius: 5px;
   font-family: var(--heading-font);
@@ -90,9 +94,10 @@ nav a:hover {
   left: 50%;
   transform: translateX(-50%);
   width: 80%;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.95);
   padding: 1.5rem;
   border-radius: 8px;
+  color: #333
 }
 
 .hero article img {
@@ -105,7 +110,7 @@ nav a:hover {
 
 /* HISTORY SECTION - CSS Grid */
 section:nth-of-type(1) {
-  display: grid;
+  display: block;
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
   background-color: #f0f0f0;
