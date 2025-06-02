@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - Your Name</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    .contact-container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 30px;
+      background: #f7f9fc;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.08);
+    }
+
+    .contact-container h2 {
+      text-align: center;
+      font-size: 2em;
+      margin-bottom: 30px;
+      color: #1e3c72;
+    }
+
+    .contact-list {
+      list-style: none;
+      padding: 0;
+      font-size: 1.1em;
+    }
+
+    .contact-list li {
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+    }
+
+    .contact-list li span {
+      font-weight: bold;
+      width: 150px;
+      color: #2a5298;
+    }
+
+    .messenger-icon {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #0084ff;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 12px rgba(0,0,0,0.2);
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    .messenger-icon:hover {
+      transform: scale(1.1);
+    }
+
+    .messenger-icon img {
+      width: 30px;
+      height: 30px;
+    }
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo-container">
+      <img src="image/profile-logo.jpg" alt="Logo" class="logo"/>
+      <h1 class="site-name">Howard Francisco</h1>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Me</a>
+      <a href="projects.html">My Projects</a>
+      <a href="contact.html">Contacts</a>
+    </nav>
+  </header>
+
+  <main class="contact-container">
+    <h2>Contact Me</h2>
+    <ul class="contact-list">
+      <li><span>Email:</span> your@email.com</li>
+      <li><span>Phone:</span> +63 912 345 6789</li>
+      <li><span>Facebook:</span> <a href="https://facebook.com/yourprofile" target="_blank">facebook.com/yourprofile</a></li>
+      <li><span>LinkedIn:</span> <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></li>
+      <li><span>Address:</span> Your City, Country</li>
+    </ul>
+  </main>
+
+  <!-- Messenger Icon (replace YOUR_PAGE_ID with your actual page or profile ID) -->
+  <a class="messenger-icon" href="https://m.me/105683191523368" target="_blank" title="Chat via Messenger">
+    <img src="image/messenger-logo.png" alt="Messenger Icon">
+  </a>
+</body>
+</html>

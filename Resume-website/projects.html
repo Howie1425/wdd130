@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Projects</title>
+  <link rel="stylesheet" href="projects.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo-container">
+      <img src="image/profile-logo.jpg" alt="Logo" class="logo"/>
+      <h1 class="site-name">Howard Francisco</h1>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Me</a>
+      <a href="projects.html">My Projects</a>
+      <a href="contact.html">Contacts</a>
+    </nav>
+  </header>
+
+  <main class="gallery-section">
+    <h2 class="gallery-title">My Projects</h2>
+    <div class="gallery-grid">
+      <!-- Example thumbnail -->
+      <div class="gallery-item">
+        <img src="project1.jpg" alt="Project 1" />
+        <div class="caption">Project Title or Description</div>
+      </div>
+      <div class="gallery-item">
+        <img src="project2.jpg" alt="Project 2" />
+        <div class="caption">Another Project Caption</div>
+      </div>
+      <!-- Add more items as needed -->
+    </div>
+  </main>
+
+  <!-- Modal for Zoomed Image -->
+  <div id="modal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modal-img">
+    <div id="modal-caption"></div>
+  </div>
+
+  <script>
+    // Modal functionality
+    const modal = document.getElementById("modal");
+    const modalImg = document.getElementById("modal-img");
+    const captionText = document.getElementById("modal-caption");
+    const items = document.querySelectorAll(".gallery-item img");
+
+    items.forEach(img => {
+      img.addEventListener("click", () => {
+        modal.style.display = "flex";
+        modalImg.src = img.src;
+        captionText.innerText = img.nextElementSibling.innerText;
+      });
+    });
+
+    document.querySelector(".close").addEventListener("click", () => {
+      modal.style.display = "none";
+    });
+  </script>
+</body>
+</html>
