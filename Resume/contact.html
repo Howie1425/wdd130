@@ -93,7 +93,33 @@
 
   <!-- Messenger Icon (replace YOUR_PAGE_ID with your actual page or profile ID) -->
   <a class="messenger-icon" href="https://m.me/108022912391740" target="_blank" title="Chat via Messenger">
-    <img src="image/profile-logo.jpg" alt="Messenger Icon">
+    <img src="image/messenger-logo.png" alt="Messenger Icon">
   </a>
+  <!-- Messenger Chat Plugin Code -->
+  <div id="fb-root"></div>
+  <div id="fb-customer-chat" class="fb-customerchat"></div>
+
+  <script>
+    var chatbox = document.getElementById('fb-customer-chat');
+    chatbox.setAttribute("page_id", "108022912391740");
+    chatbox.setAttribute("attribution", "biz_inbox");
+  </script>
+
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        xfbml: true,
+        version: 'v18.0'
+      });
+    };
+
+    (function(d, s, id) {
+      if (d.getElementById(id)) return;
+      var js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+      var fjs = d.getElementsByTagName(s)[0];
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
 </body>
 </html>
