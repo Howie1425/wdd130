@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact - Your Name</title>
+  <title>Contact - Howard Francisco</title>
   <link rel="stylesheet" href="style.css"/>
   <style>
     .contact-container {
@@ -40,6 +40,15 @@
       color: #2a5298;
     }
 
+    .contact-list li a {
+      color: #1e3c72;
+      text-decoration: none;
+    }
+
+    .contact-list li a:hover {
+      text-decoration: underline;
+    }
+
     .messenger-icon {
       position: fixed;
       bottom: 20px;
@@ -54,6 +63,7 @@
       box-shadow: 0 0 12px rgba(0,0,0,0.2);
       cursor: pointer;
       transition: transform 0.3s;
+      z-index: 999;
     }
 
     .messenger-icon:hover {
@@ -91,17 +101,18 @@
     </ul>
   </main>
 
-  <!-- Messenger Icon (replace YOUR_PAGE_ID with your actual page or profile ID) -->
+  <!-- Messenger Floating Icon -->
   <a class="messenger-icon" href="https://m.me/108022912391740" target="_blank" title="Chat via Messenger">
     <img src="image/messenger-logo.png" alt="Messenger Icon">
   </a>
-  <!-- Messenger Chat Plugin Code -->
+
+  <!-- Messenger Chat Plugin -->
   <div id="fb-root"></div>
   <div id="fb-customer-chat" class="fb-customerchat"></div>
 
   <script>
     var chatbox = document.getElementById('fb-customer-chat');
-    chatbox.setAttribute("page_id", "108022912391740");
+    chatbox.setAttribute("page_id", "108022912391740"); // ✅ your real page ID
     chatbox.setAttribute("attribution", "biz_inbox");
   </script>
 
@@ -123,3 +134,4 @@
   </script>
 </body>
 </html>
+
