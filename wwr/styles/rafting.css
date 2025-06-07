@@ -261,7 +261,7 @@ footer .socialmedia img {
   height: 150px;
   object-fit: cover;
   border-radius: 8px;
-  border: 2px solid var(--accent1-color);
+  border: 2px solid var(--primary-color);
 }
 
 /* Contact Form */
@@ -321,4 +321,12 @@ footer .socialmedia img {
 
 .contact-form button.submit-btn:hover {
   background-color: var(--accent1-color);
+}
+footer a {
+  color: white;
+  text-decoration: underline; 
+}
+
+footer a:hover {
+  color: #ddd; 
 }
